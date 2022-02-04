@@ -76,6 +76,7 @@
     background-color: white;
 
   }
+
   .background-index{
     background-image: url("images/background/index-background.jpg");
     background-size: 100% auto;
@@ -254,7 +255,7 @@
 /*catalog*/
 .inner-header{
   background-color: black;
-  background-image: url("images/background/catalog-background 1.jpg");
+  background-image: url("images/background/catalog-background\ 1.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   font-family: "PT Sans", sans-serif;
