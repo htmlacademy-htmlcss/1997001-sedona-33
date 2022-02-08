@@ -57,6 +57,7 @@ body {
 }
 
 /*Pages*/
+
 .page-header {
   color: #ffffff;
   background: #ffffff;
@@ -72,13 +73,16 @@ body {
   text-decoration: none;
   font-style: Bold;
 }
+
 .button {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
   background-color: #756257;
 }
+
 /*main-index*/
+
 .main-index{
   flex-grow: 1;
 }
@@ -209,11 +213,13 @@ body {
   width: 400px;
   height: 384px;
 }
+
 .advantages-item-4 {
   background: rgba(131, 179, 211, 0.2);
   width: 400px;
   height: 384px;
 }
+
 .advantages-item-5 {
   background: rgba(131, 179, 211, 0.12);
   width: 400px;
@@ -247,8 +253,8 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
-  
 }
+
 .appointment-description {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -263,9 +269,10 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   background: #756257;
-  position: absolute;
 }
+
 /*footer*/
+
 .subscription {
   background-image: url("images/background/background.jpg");
   background-size: 100% auto;
@@ -305,6 +312,7 @@ body {
   text-decoration: none;
   font-style: Bold;
 }
+
 /*catalog*/
 .inner-header {
   background-color: black;
