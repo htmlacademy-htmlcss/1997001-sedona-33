@@ -2,8 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/pt-sans-regular.woff2") format("woff2");
-
+  src: url("fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -11,8 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/pt-sans-bold.woff2") format("woff2");
-
+  src: url("fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -20,14 +18,14 @@
   font-family: "PT Sans";
   font-style: italic;
   font-weight: 400;
-  src: url("fonts/pt-sans-italic.woff2") format("woff2");
+  src: url("fonts/ptsans-italic.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "PT Sans";
   font-style: italic;
   font-weight: 700;
-  src: url("fonts/pt-sans-bold-italic.woff2") format("woff2");
+  src: url("fonts/ptsans-bold-italic.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -36,7 +34,7 @@
   font-family: "PT Sans Narrow";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/pt-sans-narrow-bold.woff2") format("woff2");
+  src: url("fonts/ptsans-narrow-bold.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -435,27 +433,43 @@ input[type=email]{
   font-weight: normal;
   font-size: 22px;
   line-height: 36px;
-  
   color: white;
+}
+
+.page-header-container{
+  margin: 0;
+  padding: 0;
+  padding-left: 0;
+  padding-bottom: 83px;
+}
+
+.catalog-filter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .inner-header-title {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 60px;
   line-height: 78px;
   color: white;
+  margin: 0;
+  padding-bottom: 5px;
 }
 
-.breadcrumbs-link-index {
-  font-family: "PT Sans Narrow", sans-serif;
-  font-style: normal;
-  font-weight: normal;
+.breadcrumbs {
+  display: flex;
+  justify-content: start;
   font-size: 16px;
   line-height: 21px;
-  text-decoration: none;
-  color: white;
+  font-weight: 400;
+  margin: 0;
+  padding-left: 0;
+  padding-bottom: 45px;
+  list-style: none;
 }
 
 .infrastructure-title {
@@ -465,6 +479,12 @@ input[type=email]{
   font-size: 20px;
   line-height: 26px;
   color: white;
+}
+
+.infrastructure-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .control {
@@ -481,6 +501,19 @@ input[type=email]{
   text-decoration: none;
   text-transform: uppercase;
   background-color: #83b3d3;
+}
+
+.product-list{
+  padding-left: 70px;
+  padding-right: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-card{
+  width: 339px;
+  height: 438px;
 }
 
 .product-card-link {
@@ -541,6 +574,13 @@ input[type=email]{
   border-radius: 4px;
 }
 
+.button-pagination-loadmore{
+  width: 1056px;
+  height: 120px;
+  padding: 34px 70px 20px 70px;
+  text-align: center;
+}
+
 .button-loadmore {
   background-color: #83b3d3;
   height: 60px;
@@ -554,6 +594,25 @@ input[type=email]{
   text-align: center;
   text-transform: uppercase;
   border-radius: 4px;
+}
+
+.pagination{
+  display: flex;
+  width: 1056px;
+  height: 56px;
+  text-align: center;
+}
+
+.subscription-no-background{
+  width: 800px;
+  height: 224px;
+  margin: 90px 200px 140px 200px;
+  text-align: center;
+}
+
+.box-subscription-background{
+  width: 800px;
+  height: 224px;
 }
 
 .pagination-item {
