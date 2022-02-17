@@ -799,7 +799,11 @@ input[type="email"] {
 
   min-width: 620px;
   min-height: 60px;
-  margin: 30px 290px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 230px;
+  margin-right: 330px;
+  
 
   text-align: center;
   text-transform: uppercase;
