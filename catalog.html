@@ -106,6 +106,12 @@
                             </li>
                         </ul>
                     </fieldset>
+                    <fieldset class="infrastructure-group">
+                        <legend class="infrastructure-title">Стоимость,&#8381:</legend>
+                        <label class="control">
+                            <input class="control-inpur" type="" name="type-of-housing" value="price">
+                        </label>
+                    </fieldset>
                     <div class="reset-submit">
                         <button class="button-appy" type="submit">Применить</button>
                         <button class="button-reset" type="reset">Сбросить</button>
@@ -148,64 +154,84 @@
                 <ul class="prooduct-item">
                     <li class="product-card">
                         <a class="product-card-link" href="product.html">
-                            <img class="product-card-img" src="images/catalog-hotel/hotel-1.jpg" width="299"
+                            <img class="product-card-img" src="images/catalog-hotel/hotel-1.jpg" width="300"
                                 height="206" alt="Amara Resort & Spa">
+                        </a>
+                        <a class="product-card-title-link" href="#">
                             <h3 class="product-card-title">Amara Resort & Spa</h3>
                         </a>
                         <p class="price">Гостиница <span class="price-card">От 4000 ₽</span></p>
-                        <div class="button-card">
+                        <div class="box-product-button">
                             <a class="product-card-button-button" href="#">Подробнее</a>
-                            <a class="product-card-button-favorites" href="#">В избранное</a>
-                            <p class="rating"><span class="visually-hidden">Звезды 4</span> Рейтинг:8,5</p>
+                            <button class="product-card-button-favorites" type="button">В избранное</button>
+                        </div>
+                        <div class="box-product-rating">
+                            <span class="four-stars"></span>
+                            <p class="rating"> Рейтинг:8,5</p>
                         </div>
                     </li>
                     <li class="product-card">
                         <a class="product-card-link" href="product.html">
-                            <img class="product-card-img" src="images/catalog-hotel/hotel-2.jpg" width="299"
+                            <img class="product-card-img" src="images/catalog-hotel/hotel-2.jpg" width="300"
                                 height="206" alt="Desert Quail Inn">
+                        </a>
+                        <a class="product-card-title-link" href="#">
                             <h3 class="product-card-title">Desert Quail Inn</h3>
                         </a>
                         <p class="price">Гостиница <span class="price-card">От 3000 ₽</span></p>
-                        <div class="button-card">
+                        <div class="box-product-button">
                             <a class="product-card-button-button" href="#">Подробнее</a>
-                            <a class="product-card-button-favorites" href="#">В избранное</a>
-                            <p class="rating"><span class="visually-hidden">Звезды 4</span> Рейтинг:8,5</p>
+                            <button class="product-card-button-favorites" type="button">В избранное</button>
+                        </div>
+                        <div class="box-product-rating">
+                            <span class="three-stars"></span>
+                            <p class="rating"> Рейтинг:8,9</p>
                         </div>
                     </li>
                     <li class="product-card">
                         <a class="product-card-link" href="product.html">
-                            <img class="product-card-img" src="images/catalog-hotel/hotel-3.jpg" width="299"
+                            <img class="product-card-img" src="images/catalog-hotel/hotel-3.jpg" width="300"
                                 height="206" alt="Villas at Poco Diablo">
+                        </a>
+                        <a class="product-card-title-link" href="#">
                             <h3 class="product-card-title">Villas at Poco Diablo</h3>
                         </a>
                         <p class="price">Гостиница <span class="price-card">От 2000 ₽</span></p>
-                        <div class="button-card">
+                        <div class="box-product-button">
                             <a class="product-card-button-button" href="#">Подробнее</a>
-                            <a class="product-card-button-favorites" href="#">В избранное</a>
-                            <p class="rating"><span class="visually-hidden">Звезды 4</span> Рейтинг:8,5</p>
+                            <button class="product-card-button-favorites" type="button">В избранное</button>
+                        </div>
+                        <div class="box-product-rating">
+                            <span class="two-stars"></span>
+                            <p class="rating">Рейтинг:9,2</p>
                         </div>
                     </li>
                     <li class="product-card">
                         <a class="product-card-link" href="product.html">
-                            <img class="product-card-img" src="images/catalog-hotel/hotel-4.jpg" width="299"
+                            <img class="product-card-img" src="images/catalog-hotel/hotel-4.jpg" width="300"
                                 height="206" alt="GreenTree Inn">
+                        </a>
+                        <a class="product-card-title-link" href="#">
                             <h3 class="product-card-title">GreenTree Inn</h3>
                         </a>
                         <p class="price">Гостиница <span class="price-card">От 3000 ₽</span></p>
-                        <div class="button-card">
+                        <div class="box-product-button">
                             <a class="product-card-button-button" href="#">Подробнее</a>
-                            <a class="product-card-button-favorites" href="#">В избранное</a>
-                            <p class="rating"><span class="visually-hidden">Звезды 4</span> Рейтинг:8,5</p>
+                            <button class="product-card-button-favorites" type="button">В избранное</button>
+                        </div>
+                        <div class="box-product-rating">
+                            <span class="two-stars"></span>
+                            <p class="rating">Рейтинг:9,2</p>
                         </div>
                     </li>
-                    <button class="button-loadmore" type="button">Загрузить еще</button>
                 </ul>
+                <button class="button-loadmore" type="button">Загрузить еще</button>
             </section>
             <!--Пагинация-->
             <div class="pagination-box">
                 <ul class="pagination">
                     <li class="pagination-item">
-                        <a class="pagination-link" alt="1">1</a>
+                        <a class="disabled" alt="1">1</a>
                     </li>
                     <li class="pagination-item">
                         <a class="pagination-link" href="#" alt="2">2</a>
@@ -243,7 +269,8 @@
                     бойскаутское!</p>
                 <form class="news-letter-form-catalog" action="https://echo.htmlacademy.ru/" method="post">
                     <label class="visually-hidden" for="newsletter-email">Email</label>
-                    <input class="input-catalog" placeholder="Ваш е-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+                    <input class="input-catalog" placeholder="Ваш е-mail" type="email" name="newsletter-email"
+                        id="newsletter-email" required>
                     <button class="button-newsletter-button-catalog" type="submit">Подписаться</button>
                 </form>
             </section>
