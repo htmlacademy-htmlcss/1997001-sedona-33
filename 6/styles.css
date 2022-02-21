@@ -740,13 +740,16 @@ input[type='email'] {
   margin-bottom: 20px;
 }
 
+.product-card,p{
+  align-items: flex-start;
+}
+
 .price {
   font-size: 18px;
   line-height: 23px;
 
   display: flex;
 
-  width: 300px;
   margin: 0;
   margin-bottom: 16px;
   padding: 0;
