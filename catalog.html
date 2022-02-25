@@ -27,19 +27,25 @@
                 <ul class="navigation-list navigationuser">
                     <li class="navigation-item">
                         <a class="navigation-link" href="#">
-                            <img src="images/navigation/search.svg" width="18" height="18" alt="Поиск">
+                            <svg class="nav-icon" width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m19.026 17.05-3.71-3.7c1.002-1.3 1.704-3 1.704-4.9 0-4.4-3.61-8-8.023-8C4.585.45.975 4.15.975 8.55c0 4.4 3.61 8 8.022 8 1.805 0 3.51-.6 4.914-1.7l3.71 3.7 1.405-1.5Zm-10.029-2.5c-3.309 0-6.017-2.7-6.017-6s2.708-6 6.017-6c3.31 0 6.017 2.7 6.017 6s-2.707 6-6.017 6Z"
+                                    fill="#000" />
+                            </svg>
                             <span class="visually-hidden">Поиск</span></a>
                     </li>
                     <li class="navigation-item">
                         <a class="navigation-link" href="#">
-                            <img src="images/navigation/favorite.svg" width="18" height="18" alt="Понравилось">
-                            <span class="visually-hidden">Понравилось<span class="favorite">12</span></span>
+                            <svg class="nav-icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.444 17c-.301 0-.602-.1-.802-.4-5.416-6.1-6.72-7.5-7.02-7.9C.92 7.8.519 6.6.519 5.4c0-3 2.406-5.4 5.515-5.4 1.304 0 2.507.5 3.51 1.3C10.547.5 11.851 0 13.054 0c3.008 0 5.516 2.4 5.516 5.4 0 1.3-.502 2.5-1.304 3.4l-7.02 7.9c-.2.2-.401.3-.802.3ZM3.427 7.5c.3.4 3.51 4 6.117 6.9l6.218-7c.501-.5.702-1.2.702-2 0-1.8-1.505-3.3-3.31-3.3-1.002 0-2.005.5-2.707 1.3-.301.3-.602.4-.903.4-.3 0-.602-.2-.802-.4-.702-.8-1.705-1.3-2.708-1.3-1.805 0-3.31 1.5-3.31 3.3-.1.9.302 1.6.703 2.1-.1 0-.1 0 0 0Z"
+                                    fill="#000" />
+                            </svg>
+                            <span class="visually-hidden">Понравилось</span>
                         </a>
                     </li>
                     <li class="navigation-item-button">
-                        <a class="button" href="#">
-                            <span class="button-navigation">Хочу сюда</span>
-                        </a>
+                        <a class="button" href="#">Хочу сюда!</a>
                     </li>
                 </ul>
             </nav>
@@ -50,11 +56,13 @@
                 <!--Хлебные крошки-->
                 <div class="breadcrumbs">
                     <a class="button-home" href="index.html" alt="Домой">
-                        <img src="images/navigation/home.svg" width="12" height="12" alt="домой">
-                        <span class="visually-hidden">Домой</span>
+                        <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 .3 0 5.8V12h12V5.8L6 .3ZM11 11H1V6.2l5-4.5 5 4.5V11Z" fill="#fff"/><path d="M4 10h1V7.5h2V10h1V6.5H4V10Z" fill="#fff"/>
+                        </svg>
                     </a>
-                    <img class="img-navigation" src="images/navigation/Vector.svg" width="5" height="8"
-                        alt="направление">
+                    <svg class="navigation-bredcrums" width="5" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.8 3.6 1 .2C.8 0 .4 0 .1.2-.2.4-.1.8.1 1l3.3 3L.2 7c-.2.2-.2.6 0 .8 0 .1.3.2.4.2.1 0 .3-.1.4-.2l3.8-3.4c.3-.2.3-.6 0-.8Z" fill="#a79898"/>
+                    </svg>
                     <a class="breadcrumbs-link-index" href="">Главная</a>
                 </div>
                 <!--Фильтрация-->
@@ -119,35 +127,44 @@
                 </form>
             </header>
             <!--Селект-->
-            <section class="sorting">
-                <div class="sorting-container">
-                    <h2 class="visually-hidden">Сортировка результатов</h2>
-                    <p class="sorting-title">Найдено гостиниц: </p>
-                    <select class="select-control" aria-label="Сортировка">
-                        <option value="cheap">Сначала дешёвые</option>
-                        <option value="expensive">Сначала дорогие</option>
-                        <option value="popular">Сначала популярные</option>
-                    </select>
-                    <div class="sorting-button">
-                        <ul class="sorting-list">
-                            <li class="sorting-item">
-                                <button class="button" type="button">
-                                    <span class="visually-hidden">Показать список плиткой</span>
-                                </button>
-                            </li>
-                            <li class="sorting-item">
-                                <button class="button" type="button">
-                                    <span class="visually-hidden">Показать слайдами</span>
-                                </button>
-                            </li>
-                            <li class="sorting-item">
-                                <button class="button" type="button">
-                                    <span class="visually-hidden">Показать списоком</span>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+            <section class="sorting-container">
+                <h2 class="visually-hidden">Сортировка результатов</h2>
+                <p class="sorting-title">Найдено гостиниц: </p>
+                <select class="select-control" aria-label="Сортировка">
+                    <option value="cheap">Сначала дешёвые</option>
+                    <option value="expensive">Сначала дорогие</option>
+                    <option value="popular">Сначала популярные</option>
+                </select>
+                <ul class="sorting-list">
+                    <li class="sorting-item">
+                        <button class="button-sorting" type="button">
+                            <svg class="icon-sorting" width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"
+                                    fill="#000" />
+                            </svg>
+                            <span class="visually-hidden">Показать список плиткой</span>
+                        </button>
+                    </li>
+                    <li class="sorting-item">
+                        <button class="button-sorting" type="button">
+                            <svg class="icon-sorting" width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000" />
+                            </svg>
+                            <span class="visually-hidden">Показать слайдами</span>
+                        </button>
+                    </li>
+                    <li class="sorting-item">
+                        <button class="button-sorting" type="button">
+                            <svg class="icon-sorting" width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"
+                                    fill="#000" />
+                            </svg>
+                            <span class="visually-hidden">Показать списоком</span>
+                        </button>
+                    </li>
+                </ul>
+            
             </section>
             <!--Карточки-->
             <section class="product-list">
@@ -278,19 +295,17 @@
                 <ul class="footer-social-list">
                     <li class="footer-social-item">
                         <a class="button-social-twitter" href="https://twitter.com/htmlacademy_ru">
-                            <img src="images/footer/social-twitter.svg" width="18" height="15" alt="twitter">
                             <span class="visually-hidden">Твиттер</span>
                         </a>
                     </li>
                     <li class="footer-social-item">
                         <a class="button-social-facebook" href="https://www.facebook.com/htmlacademy">
-                            <img src="images/footer/social-facebook.svg" width="10" height="18" alt="facebook">
+                        
                             <span class="visually-hidden">facebook</span>
                         </a>
                     </li>
                     <li class="footer-social-item">
                         <a class="button-social-youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
-                            <img src="images/footer/social-youtube.svg" width="20" height="16" alt="youtube">
                             <span class="visually-hidden">Ютуб</span>
                         </a>
                     </li>
@@ -302,7 +317,6 @@
                             alt="Логотип htmlacademy">
                     </a>
                 </div>
-            </div>
         </footer>
     </div>
 </body>
