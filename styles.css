@@ -104,21 +104,20 @@ body {
   color: #756257;
 }
 
+.navigation-link:active{
+  color: rgba(117, 98, 87, 0.3);
+}
+
 .nav-icon:hover {
   fill: #756257;
 }
 
-.navigation-link-current::after {
-  position: absolute;
-  right: 20px;
-  bottom: 0;
-  left: 20px;
+.nav-icon:active{
+  fill: rgba(117, 98, 87, 0.3);
+}
 
-  height: 4px;
-
-  content: '';
-
-  background-color: #000;
+.navigation-link-current{
+  border-bottom: 2px solid #756257;
 }
 
 .logo {
@@ -127,7 +126,7 @@ body {
   margin-bottom: -5px;
 }
 
-.button {
+.button-welcome {
   font-size: 16px;
   font-weight: bold;
   line-height: 20px;
@@ -150,13 +149,17 @@ body {
   background-repeat: no-repeat;
 }
 
-.button:hover {
+.button-welcome:hover {
   background-color: #615048;
 }
 
-.button:focus {
+.button-welcome:focus {
   outline: none;
   box-shadow: inset 0 0 0 3px #83b3d3;
+}
+
+.button-welcome:active{
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .navigationuser li:nth-child(2) {
@@ -463,7 +466,7 @@ body {
   text-align: center;
 }
 
-.button-button {
+.button-search-hotel {
   font-size: 20px;
   font-weight: 700;
   font-style: normal;
@@ -485,15 +488,18 @@ body {
   background: #756257;
 }
 
-.button-button:hover {
+.button-search-hotel:hover {
   background-color: #615048;
 }
 
-.button-button:focus {
+.button-search-hotel:focus {
   outline: none;
   box-shadow: inset 0 0 0 3px #83b3d3;
 }
 
+.button-search-hotel:active{
+  color: rgba(255, 255, 255, 0.3);
+}
 /*subscription*/
 
 .subscription {
@@ -550,6 +556,10 @@ input[type='email'] {
   box-shadow: inset 0 0 0 3px #756257;
 }
 
+.button-newsletter-button:active{
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .subscription-title {
   font-size: 30px;
   font-weight: 700;
@@ -601,48 +611,41 @@ input[type='email'] {
 }
 
 .footer-social-item {
-  width: 25px;
-  height: 25px;
-  margin-top: 8px;
-  margin-left: 17px;
+  padding: 0;
+  margin: 0;
 
   text-align: center;
 }
 
-.button-social-twitter {
-  display: block;
+.button-social:focus{
+  box-shadow: inset 0 0 0 3px #83B3D3;
+}
 
-  height: 18px;
+.button-social{
+  display: block;
+  padding: 0;
+  margin: 0;
+  padding: 8px 10px 10px 10px;
+  width: 20px;
+  height: 16px;
+
+  text-align: center;
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: 16px 16px;
+  border-radius: 10px;
 }
 
-.button-social-facebook {
-  display: block;
-
-  height: 18px;
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 16px 16px;
-}
 
 .footer-social-icon:hover {
   fill: #68a2ca;
 }
 
-
-.button-social-youtube {
-  display: block;
-
-  height: 18px;
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 16px 16px;
+.footer-social-icon:active{
+  fill: rgba(135, 178, 207, 0.308);
 }
+
 
 .footer-contacts-phone {
   font-size: 40px;
@@ -651,33 +654,61 @@ input[type='email'] {
   font-style: Bold;
   line-height: 40px;
 
-  width: 720px;
+  width: 350px;
   margin-right: 55px;
-  margin-left: 65px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  margin-left: 100px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-top: 5px;
 
   text-align: center;
   text-decoration: none;
 
   color: black;
   background-color: #fff;
+  border-radius: 10px;
 }
 
 .footer-contacts-phone:hover {
   color: #756257;
 }
 
-.footer-copyright-image {
-  width: 115px;
-  margin-top: 42px;
-  margin-right: 72px;
-  margin-bottom: 44px;
-  margin-left: 53px;
+.footer-contacts-phone:focus{
+  box-shadow: inset 0 0 0 3px #83B3D3;
+}
+
+.footer-contacts-phone:active{
+  color: rgba(143, 138, 136, 0.61);
 }
 
 .footer-copyright-image:hover {
   fill: #756257;
+}
+
+.footer-copyright-image:active{
+  fill: rgba(143, 138, 136, 0.61);
+}
+
+.box-logo{
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-top: 48px;
+  margin-right: 72px;
+}
+
+.htmlacademy-link:focus{
+  box-shadow: inset 0 0 0 3px #68a2ca;
+}
+
+.htmlacademy-link{
+  margin: 0;
+  padding: 0;
+  width: 115px;
+  height: 40px;
+  padding: 30px 20px 10px 20px;
+  border-radius: 10px;
+  text-align: center;
 }
 
 /*catalog*/
@@ -690,7 +721,7 @@ input[type='email'] {
 
   color: white;
   background-color: black;
-  background-image: url('images/background/catalog-background\ 1.jpg');
+  background-image: url('images/background/catalog-background1.jpg');
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-size: cover;
@@ -1054,6 +1085,7 @@ input[type='email'] {
   border: none;
   border-radius: 4px;
   background: #83b3d3;
+  cursor: pointer;
 }
 
 .pagination-box {
@@ -1156,7 +1188,7 @@ input[type='email'] {
   grid-template-columns: 600px 200px;
 }
 
-.button-newsletter-button-catalog {
+.button-newsletter-button-catalog{
   font-size: 20px;
   font-weight: bold;
   font-style: normal;
@@ -1171,6 +1203,19 @@ input[type='email'] {
   border: none;
   border-radius: 0 10px 10px 0;
   background-color: #83b3d3;
+  cursor: pointer;
+}
+
+.button-newsletter-button-catalog:hover {
+  background-color: #68a2ca;
+}
+
+.button-newsletter-button-catalog:focus {
+  box-shadow: inset 0 0 0 3px #756257;
+}
+
+.button-newsletter-button-catalog:active{
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-item {
