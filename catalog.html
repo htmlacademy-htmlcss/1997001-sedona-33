@@ -15,13 +15,13 @@
                 <img class="logo" src="images/logo/logo.svg" width="139" height="70" alt="Логотип город Седона">
                 <ul class="navigation-list">
                     <li class="navigation-item">
-                        <a class="navigation-link navigation-link-current" href="about.html">Главная</a>
+                        <a class="navigation-link" href="about.html">Главная</a>
                     </li>
                     <li class="navigation-item">
                         <a class="navigation-link" href="">О Седоне</a>
                     </li>
                     <li class="navigation-item">
-                        <a class="navigation-link" href="catalog.html">Гостиницы</a>
+                        <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
                     </li>
                 </ul>
                 <ul class="navigation-list navigationuser">
@@ -38,7 +38,8 @@
                                 <path
                                     d="M9.444 17c-.301 0-.602-.1-.802-.4-5.416-6.1-6.72-7.5-7.02-7.9C.92 7.8.519 6.6.519 5.4c0-3 2.406-5.4 5.515-5.4 1.304 0 2.507.5 3.51 1.3C10.547.5 11.851 0 13.054 0c3.008 0 5.516 2.4 5.516 5.4 0 1.3-.502 2.5-1.304 3.4l-7.02 7.9c-.2.2-.401.3-.802.3ZM3.427 7.5c.3.4 3.51 4 6.117 6.9l6.218-7c.501-.5.702-1.2.702-2 0-1.8-1.505-3.3-3.31-3.3-1.002 0-2.005.5-2.707 1.3-.301.3-.602.4-.903.4-.3 0-.602-.2-.802-.4-.702-.8-1.705-1.3-2.708-1.3-1.805 0-3.31 1.5-3.31 3.3-.1.9.302 1.6.703 2.1-.1 0-.1 0 0 0Z" />
                             </svg>
-                            <span class="visually-hidden">Понравилось</span>
+                            <span class="favorite-counter">12</span>
+                            <span class="visually-hidden">Избранное</span>
                         </a>
                     </li>
                     <li class="navigation-item-button">
@@ -177,7 +178,7 @@
                         <p class="price">Гостиница <span class="price-card">От 4000 ₽</span></p>
                         <div class="box-product-button">
                             <a class="product-card-button-button" href="#">Подробнее</a>
-                            <button class="product-card-button-favorites" type="button">В избранное</button>
+                            <button class="product-card-button-favorites decore-buttom" type="button"><span class="button-span">В избранное</span></button>
                         </div>
                         <div class="box-product-rating">
                             <span class="stars"></span>
@@ -195,7 +196,7 @@
                         <p class="price">Гостиница <span class="price-card">От 3000 ₽</span></p>
                         <div class="box-product-button">
                             <a class="product-card-button-button" href="#">Подробнее</a>
-                            <button class="product-card-button-favorites" type="button">В избранное</button>
+                            <button class="product-card-button-favorites decore-buttom" type="button"><span class="button-span">В избранное</span></button>
                         </div>
                         <div class="box-product-rating">
                             <span class="stars three-stars"></span>
@@ -213,7 +214,7 @@
                         <p class="price">Гостиница <span class="price-card">От 2000 ₽</span></p>
                         <div class="box-product-button">
                             <a class="product-card-button-button" href="#">Подробнее</a>
-                            <button class="product-card-button-favorites" type="button">В избранное</button>
+                            <button class="product-card-button-favorites-green decore-buttom" type="button"><span class="button-span">В избранное</span></button>
                         </div>
                         <div class="box-product-rating">
                             <span class="stars two-stars"></span>
@@ -231,7 +232,7 @@
                         <p class="price">Гостиница <span class="price-card">От 3000 ₽</span></p>
                         <div class="box-product-button">
                             <a class="product-card-button-button" href="#">Подробнее</a>
-                            <button class="product-card-button-favorites" type="button">В избранное</button>
+                            <button class="product-card-button-favorites decore-buttom" type="button"><span class="button-span">В избранное</span></button>
                         </div>
                         <div class="box-product-rating">
                             <span class="stars two-stars"></span>
@@ -239,7 +240,7 @@
                         </div>
                     </li>
                 </ul>
-                <button class="button-loadmore" type="button">Загрузить еще</button>
+                <button class="button-loadmore" type="button"><span class="button-loadmore-span">Загрузить еще</span></button>
             </section>
             <!--Пагинация-->
             <div class="pagination-box">
@@ -264,7 +265,7 @@
                     </li>
                 </ul>
                 <div class="select">
-                    <p>Гостиниц на странице:</p>
+                    <p class="hotel_select">Гостиниц на странице:</p>
                     <select class="select-pagination" aria-label="Сортировка">
                         <option class="select-pagination-1">1</option>
                         <option class="select-pagination-1">2</option>
