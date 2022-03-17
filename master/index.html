@@ -194,93 +194,76 @@
             </div>
         </footer>
     </div>
-    <div class="modal-container modal-container-close">
-        <div class="modal modal-search">
-            <button class="modal-close-button">
+    <section class="modal-container modal-container-close">
+        <div class="modal modal-search-hotels">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <button class="modal-close-button" type="button">
                 <span class="visually-hidden">Закрыть</span>
                 <svg class="output-svg" width="13" height="13" fill="#000000" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z" />
                 </svg>
             </button>
-            <section class="modal-content">
-                <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-                <form class="modal-appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-                    <p class="field-group appointment-form-date">
-                    <div class="label-box">
-                        <label class="form-label" for="start">Дата заезда:</label>
-                    </div>
-                    <input class="field-date form_class" type="text" id="start" name="arrival-date" placeholder="27 апреля 2020">
-                    <span class="active-span">Мы не можем отправить вас в прошлое.</span>
-                    </p>
-                    <p class="field-group appointment-form-date">
-                    <div class="label-box">
-                        <label class="form-label" for="start">Дата выезда:</label>
-                    </div>
-                    <input class="field-date form_class" type="text" id="start" name="arrival-date" placeholder="1 сентября 2020">
-                    <span class="active-span none-span">На эти даты есть свободные номера. Пока есть.</span>
-                    </p>
-                    <div class="inline-box">
-                        <p class="field-group-select appointment-form-date">
-                        <div class="label-box-select">
-                            <label class="form-label" for="start">Взрослые:</label>
-                        </div>
-                        <div class="plus-box-button">
-                            <button class="plus-minus-button">
-                                <svg class="plus-minus-svg" width="13" height="1" fill="gray"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0v1h13V0H0Z" />
-                                </svg>
+            <form class="date-form" action="https://echo.htmlacademy.ru/" method="post">
+                <p class="field-group date-form-check">
+                    <label class="form-label" for="check-in-date">Дата заезда:</label>
+                    <!-- Для состояния невалидности добавить класс field-date-invalid -->
+                    <input class="field-date" type="text" id="check-in-date" name="check-in-date"
+                        placeholder="27 апреля 2020" required>
+                    <button class="button-date" type="button">
+                        <span class="visually-hidden">Выбор даты</span>
+                    </button>
+                    <span class="message message-error">Мы не можем отправить вас в прошлое.</span>
+                </p>
+                <p class="field-group date-form-check">
+                    <label class="form-label" for="check-out-date">Дата выезда:</label>
+                    <!-- Для состояния невалидности добваить класс field-date-invalid -->
+                    <input class="field-date" type="text" id="check-out-date" name="check-out-date"
+                        placeholder="1 сентября 2021" required>
+                    <button class="button-date" type="button">
+                        <span class="visually-hidden">Выбор даты</span>
+                    </button>
+                    <span class="message">На эти даты есть свободные номера. Пока есть.</span>
+                </p>
+                <div class="wrapper-field-group">
+                    <div class="field-group date-form-check">
+                        <label class="form-label" for="number-of-adults">Взрослые:</label>
+                        <div class="form-counter-wrapper">
+                            <button class="button-counter button-minus" type="button">
+                                <span class="visually-hidden">Минус</span>
+                            </button>
+                            <input class="field-guests" type="text" id="number-of-adults" name="number-of-adults"
+                                placeholder="2" required>
+                            <button class="button-counter button-plus" type="button">
+                                <span class="visually-hidden">Плюс</span>
                             </button>
                         </div>
-                        <input class="field-select" type="text" id="start" name="arrival-date" min="1" max="10"
-                            placeholder="2">
-                        <div class="plus-box-button plus_box">
-                            <button class="plus-minus-button plus_button"><svg class="plus-minus-svg" width="13"
-                                    height="13" fill="gray" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
-                                </svg>
-                            </button>
-                        </div>
-                        </p>
-                        <p class="field-group-select appointment-form-date">
-                        <div class="label-box-select_tooltip">
-                            <span class="label-span-tooltip form-label-icon">
-                                <label class="form-label" for="start">Дети:</label>
-                                <span class="tooltip">
-                                    <button class="tooltip_toggle" type="button"
-                                        aria-labelledby="tooltip-label"></button>
-                                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество
-                                        детей,<br> которые будут с вами, возраст<br> которых от 6 до 18 лет. Дети<br> до
-                                        6 лет размещаются бесплатно.</span>
-                                </span>
-                            </span>
-                        </div>
-                        <div class="plus-box-button">
-                            <button class="plus-minus-button"><svg class="plus-minus-svg" width="13" height="1"
-                                    fill="gray" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0v1h13V0H0Z" />
-                                </svg>
-                            </button>
-                        </div>
-                        <input class="field-select" type="text" id="start" name="arrival-date" min="1" max="10"
-                            placeholder="1">
-                        <div class="plus-box-button plus_box">
-                            <button class="plus-minus-button plus_button"><svg class="plus-minus-svg" width="13"
-                                    height="13" fill="gray" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
-                                </svg>
-                            </button>
-                        </div>
-                        </p>
                     </div>
-                    <div class="button-search-box" type="submit">
-                        <a class="button-search-model" href="#">найти</a>
+                    <div class="field-group date-form-check">
+                        <label class="form-label label-children" for="number-of-children">Дети:</label>
+                        <div class="tooltip">
+                            <button class="tooltip-toggle" type="button">
+                                <span class="visually-hidden">Информация</span>
+                            </button>
+                            <p class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6
+                                до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+                        </div>
+                        <div class="form-counter-wrapper">
+                            <button class="button-counter button-minus" type="button">
+                                <span class="visually-hidden">Минус</span>
+                            </button>
+                            <input class="field-guests" type="text" id="number-of-children" name="number-of-children"
+                                placeholder="1" required>
+                            <button class="button-counter button-plus" type="button">
+                                <span class="visually-hidden">Плюс</span>
+                            </button>
+                        </div>
                     </div>
-                </form>
-            </section>
+                </div>
+                <button class="button-modal" type="submit">Найти</button>
+            </form>
         </div>
-    </div>
+    </section>
 </body>
 
 </html>
