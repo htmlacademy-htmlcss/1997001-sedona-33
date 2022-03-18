@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link rel="stylesheet" href="styles.css">
   <base href="https://htmlacademy-htmlcss.github.io/1997001-sedona-33/master/">
 </head>
@@ -26,7 +27,7 @@
                 </ul>
                 <ul class="navigation-list navigationuser">
                     <li class="navigation-item">
-                        <a class="navigation-link nav-user-icon" href="#">
+                        <a class="navigation-link nav-user-icon" href="#" aria-label="Поиск">
                             <svg class="nav-icon" width="20" height="19" fill="currentColor"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -35,7 +36,7 @@
                             <span class="visually-hidden">Поиск</span></a>
                     </li>
                     <li class="navigation-item">
-                        <a class="navigation-link nav-user-icon" href="#">
+                        <a class="navigation-link nav-user-icon" href="#" aria-label="Избранное">
                             <svg class="nav-icon" width="19" height="17" fill="currentColor"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -58,8 +59,8 @@
                     <img class="welcome" src="images/logo/welcome.svg" width="458" height="352"
                         alt="Логотип Добро пожаловать в Седону!">
                 </div>
-                <div class="background">
-                    <h2 class="causes">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+                <div class="background-causes">
+                    <h2 class="causes">Седона&nbsp;&mdash;небольшой городок в&nbsp;Аризоне, заслуживающий большего!</h2>
                     <p class="five-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
                 </div>
             </section>
@@ -77,26 +78,19 @@
                             </p>
                         </div>
                         <img class="photo" src="images/home-photo/photo-1.jpg" width="800" height="384"
-                            alt="фото города">
+                            alt="Одна из гостиниц Седоны с видом на горы">
                         <ul class="advantages-live">
                             <li class="advantages-item-item advantages-background">
                                 <h4 class="advantatges-title-2">Жилье</h4>
-                                <p class="advantages-description-2">Рекомендуем пожить<br> в настоящем мотеле,<br> всё
-                                    как
-                                    в кино!
-                                </p>
+                                <p class="advantages-description-2">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
                             </li>
                             <li class="advantages-item-item advantages-background">
                                 <h4 class="advantatges-title-2">Еда</h4>
-                                <p class="advantages-description-2">Всегда заказывайте<br> топовый фирменный
-                                    бургер,<br>вы
-                                    не разочаруетесь!
-                                </p>
+                                <p class="advantages-description-2">Всегда заказывайте<br> топовый фирменный бургер,<br>вы не разочаруетесь!</p>
                             </li>
                             <li class="advantages-item-item advantages-background">
                                 <h4 class="advantatges-title-2">Сувениры</h4>
-                                <p class="advantages-description-2">Не только китайского,<br> но и настоящего
-                                    местного<br>производства!</p>
+                                <p class="advantages-description-2">Не только китайского,<br> но и настоящего местного<br>производства!</p>
                             </li>
                         </ul>
                     </li>
@@ -127,12 +121,11 @@
                     </li>
                 </ol>
             </section>
+            <!--Поиск гостиницы-->
             <section class="hotel-search">
                 <h2 class="appointmet-title">Заинтересовались?</h2>
-                <p class="appointment-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам
-                    лучшие
-                    предложения гостиниц в Седоне</p>
-                <button class="button-search-hotel" type="submit">ПОИСК ГОСТИНИЦЫ В седоне</button>
+                <p class="appointment-description">Укажите предполагаемые даты поездки,<br>и мы покажем в лучшие предложения гостиниц в Седоне</p>
+                <a class="button-search-hotel" href="catalog.html">ПОИСК ГОСТИНИЦЫ В седоне</a>
             </section>
         </main>
         <!--Подвал-->
@@ -144,6 +137,7 @@
                     бойскаутское!</p>
                 <form class="news-letter-form" action="https://echo.htmlacademy.ru/" method="post">
                     <label class="visually-hidden" for="newsletter-email">Email</label>
+                    <!-- Для состояния невалидности добавить класс input-invalid -->
                     <input class="field" placeholder="Ваш е-mail" type="email" name="newsletter-email"
                         id="newsletter-email" required>
                     <button class="button-newsletter-button" type="submit">Подписаться</button>
@@ -152,7 +146,7 @@
             <div class="footer-container">
                 <ul class="footer-social-list">
                     <li class="footer-social-item">
-                        <a class="button-social" href="https://twitter.com/htmlacademy_ru">
+                        <a class="button-social" href="https://twitter.com/htmlacademy_ru" aria-label="твиттер">
                             <svg class="footer-social-icon" width="18" height="15" fill="#83B3D3"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -162,7 +156,7 @@
                         </a>
                     </li>
                     <li class="footer-social-item">
-                        <a class="button-social" href="https://www.facebook.com/htmlacademy">
+                        <a class="button-social" href="https://www.facebook.com/htmlacademy" aria-label="Фейсбук">
                             <svg class="footer-social-icon" width="10" height="18" fill="#83B3D3"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7 0C4.8 0 3 1.8 3 4v2H0v4h3v8h4v-8h3V6H7V4h3V0H7Z" />
@@ -171,7 +165,7 @@
                         </a>
                     </li>
                     <li class="footer-social-item">
-                        <a class="button-social" href="https://www.youtube.com/c/HTMLAcademyRUS">
+                        <a class="button-social" href="https://www.youtube.com/c/HTMLAcademyRUS" aria-label="Ютуб">
                             <svg class="footer-social-icon" width="20" height="16" fill="#83B3D3"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
