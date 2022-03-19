@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Денис Борисов](https://up.htmlacademy.ru/htmlcss/33/user/1997001).
-* Наставник: [Анна Рус] (https://htmlacademy.ru/profile/vanillawulf).
+* Наставник: [Павел Нюкало](https://htmlacademy.ru/profile/nyukalopavel).
 
 ---
 
