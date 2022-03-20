@@ -20,8 +20,8 @@ html {
 }
 
 *,
-::before,
-::after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -365,6 +365,11 @@ body {
   width: 400px;
 }
 
+.live_description{
+  padding-left: 110px;
+  padding-right: 110px;
+}
+
 .advantages-description-number {
   padding-top: 10px;
 }
@@ -400,11 +405,14 @@ body {
   text-transform: uppercase;
 }
 
+
 .hotels-description {
-  margin: 0;
+  min-width: 720px;
+  margin: auto;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  text-align: center;
 }
 
 .button-search {
@@ -967,12 +975,12 @@ body {
   text-decoration: none;
 }
 
-.breadcrumbs-houme{
-  padding-left: 4.5px;
-  border-radius: 4px;
+.hotel_breadcrumbs{
+  margin-left: -2px;
 }
 
-.breadcrumbs li:not(:last-child)::after {
+
+.breadcrumbs li:not(:first-child)::before {
   content: url("../images/arrow-nav.svg");
   margin: 0 10px;
 }
@@ -1023,6 +1031,7 @@ body {
   font-size: 20px;
   line-height: 26px;
   padding-bottom: 30px;
+  margin-left: -2px;
 }
 
 .catalog-filter-list {
@@ -1177,7 +1186,6 @@ body {
 .price-input {
   width: 145px;
   height: 48px;
-  padding-left: 16px;
   padding-right: 40px;
   font-family: "PT Sans", "Arial", sans-serif;
   line-height: 23px;
@@ -1293,6 +1301,7 @@ input[type="number"]:focus {
 .button-apply {
   min-width: 160px;
   min-height: 48px;
+  padding-right: 1px;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
@@ -1329,7 +1338,7 @@ input[type="number"]:focus {
   text-align: center;
   text-transform: none;
   color: #ffffff;
-  margin: 0;
+  margin-left: 2px;
   padding: 0;
   border: 0;
   background-color: transparent;
@@ -1558,6 +1567,7 @@ input[type="number"]:focus {
   background: #83b3d3;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .button-favourites-hotels:hover {
