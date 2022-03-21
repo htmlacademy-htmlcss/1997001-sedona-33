@@ -29,7 +29,6 @@ img {
   max-width: 100%;
   height: auto;
   overflow: hidden;
-  display: block;
   user-select: none;
 }
 
@@ -347,6 +346,10 @@ body {
   line-height: 28px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.advantages-image{
+  display: block;
 }
 
 .advantages-title-icon {
@@ -1471,6 +1474,7 @@ input[type="number"]:focus {
 
 .hotels-card-image {
   margin-bottom: 16px;
+  display: block;
 }
 
 .hotels-card-image:hover {
